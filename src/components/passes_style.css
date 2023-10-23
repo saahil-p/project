@@ -145,6 +145,7 @@
     margin-left: 120px;
     margin-top: 10px;
     border-radius: 14px;
+}
 .usn{
     display: grid;
     grid-template-columns: 1fr 1fr;
