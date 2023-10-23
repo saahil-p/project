@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class Payments extends Component {
     constructor(){
@@ -12,7 +13,7 @@ export default class Payments extends Component {
         <h4 style={{textAlign: "center",paddingLeft:"5px", fontFamily:"TimesNewRoman"}}><u>Payment Options</u></h4>
           <form>
             <div>
-            <select id = "s2">
+            <select id = "s2" required>
               <option value = "upi">UPI</option>
               <option value = " cc">Credit Card</option>
               <option value = "dc">Debit Card</option>
@@ -20,6 +21,7 @@ export default class Payments extends Component {
             </select>
         </div> 
       </form>
+      <button> <Link to = '/ps'>Pay Now! </Link></button>
     </div>
         </div>  
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Admin extends Component {
     render() {
@@ -15,7 +16,7 @@ export default class Admin extends Component {
                 <p className='rect' id="location" style={{marginLeft:"48px"}}>{this.props.year}</p>
                 <p style={{ display: "block" }}></p>
                 {/* props needs to be brought from the mongodb */}
-                <button className='mlotbtn'>Manage Lot</button>
+                <button className='mlotbtn'><Link to = "/manage">Manage Lot</Link></button>
             </div>
         )
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Passes from './Passes';
 import "./passes_style.css";
+import { Link } from 'react-router-dom';
 
 export default class Cust_lgin extends Component {
   render() {
@@ -24,6 +25,7 @@ export default class Cust_lgin extends Component {
                 <Passes btntxt = "Validate" location = "Office" validity = "Year" type = "4 Wheeler" position = "bottom-right"/>
               </div>
             </div>
+            <button className='lginbtn'><Link to = '/np'>New Pass</Link></button>
         </div>
         </>
     )

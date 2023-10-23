@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import Payments from './Payments'
 import "./passes_style.css"
+import { Link } from 'react-router-dom'
 
 export default class New_pass extends Component {
-    onPaymentHandler = ()=>{
-        <Payments/> //figure out how to make this work man
-    }
   render() {
     return (
       <>
@@ -33,7 +31,7 @@ export default class New_pass extends Component {
               <option value = "1m">2 Wheeler + 4 Wheeler</option>
             </select>
             </div>
-            <button type = "Pay" onClick={this.onPaymentHandler}>Pay</button>
+            <button type = "Pay"><Link to = '/payments'>Pay Now</Link></button>
           </form>
           </div>
       </div>

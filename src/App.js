@@ -11,27 +11,41 @@ import U_slots from "./components/U_slots";
 import Report_vio from "./components/Report_vio";
 import U_rate from "./components/U_rate";
 import View_vio from "./components/View_vio"
+import { Routes, Route} from "react-router-dom";
+import Img from "./components/Img";
 
 
-function App() {
-  return (
-    <>
-      <NavBar/>
-      <Landing/>
-      <Signup/>
-      <Cust_lgin/>
-      <Qr_page/>
-      <New_pass/>
-      <Payments/>
+import React, { Component } from 'react'
+import Pay_success from "./components/Pay_success";
+import Err from "./components/Err";
+import About from "./components/About";
 
-      <Admin day = "30" month = "2" year = "1"/>
-      <Managelot/>
-      <U_slots slots = "30"/>
-      <Report_vio/>
-      <U_rate/>
-      <View_vio/>
+export default class App extends Component {
+  render() {
+    return (
+      <>
+      <NavBar />
+      <Routes>
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/clgin" element={<Cust_lgin />} />
+          <Route exact path="/qr" element={<Qr_page />} />
+          <Route exact path="/np" element={<New_pass />} />
+          <Route exact path="/payments" element={<Payments />} />
+          <Route exact path = "/ps" element = {<Pay_success/>} />
+          <Route exact path="/adminlgin" element={<Admin day="30" month="2" year="1" />} />
+          <Route exact path="/manage" element={<Managelot />} />
+          <Route exact path="/uslots" element={<U_slots slots="30" />} />
+          <Route exact path="/rvio" element={<Report_vio />} />
+          <Route exact path="/urate" element={<U_rate />} />
+          <Route exact path="/vvio" element={<View_vio />} />
+          <Route exact path = "/img" element = {<Img/>} />
+          <Route exact path="/err" element = {<Err/>} />
+          <Route exact path = "/about" element = {<About/>} />
+        </Routes>
     </>
-  );
+    )
+  }
 }
 
-export default App;
+

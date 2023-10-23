@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Signup extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class Signup extends Component {
             <input type ="email" id = 'spem' className='spem sin' placeholder='Email'></input>
             <input type = "password" id = "spwd"className='sin' placeholder='Password'></input>
             <input type = "password" id = "scpwd" className='sin' placeholder='Confirm Password'></input>
-            <button type='submit' className='lginbtn' value={"Submit"}><b>Signup</b></button>
+            <button type='submit' className='lginbtn' value={"Submit"}><Link to = '/'><b>Signup</b></Link></button>
         </div>
       </div>
     )
