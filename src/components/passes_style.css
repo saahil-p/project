@@ -17,7 +17,17 @@
     height: 670px;
     width: 904px;
     border-radius: 18px;
+    border: solid black;
 }
+
+#qr{
+    margin: 190px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 250px; */
+}
+
 .top-left{
     margin-left: 40px;
     margin-right: 60px;
@@ -65,7 +75,6 @@
     display: inline-block;
 }
 
-
 #type{
     display: inline-block;
     background-color: white;
@@ -91,8 +100,33 @@
 /* adding a box around each individual pass */
 .pass{
     background: rgba(94, 139, 211, 0.733);
-    margin: 10px;
     padding: 20px;
     border-radius: 20px;
     border: solid rgba(177, 193, 218, 0.733);
+}
+
+#tl{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#bl{
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#tr{
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+#br{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+#newpass{
+    display: block;
+    margin: center;
+    padding: 100px 200px;
 }
