@@ -27,7 +27,7 @@ export default class Passes extends Component {
             <p id = "type">{this.props.type}</p>
             </div>
             <div>
-              <button onClick={this.onClickHandler} type = "button" value = "validate" style={{backgroundColor: "orange",marginLeft:"130px",marginBottom: "40px", }}>Validate</button>
+              <button onClick={this.onClickHandler} type = "button" value = "validate" style={{backgroundColor: "orange",marginLeft:"130px",marginBottom: "40px", }}>{this.props.btntxt}</button>
             </div>
           </div>
         </span>
