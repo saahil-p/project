@@ -16,7 +16,7 @@ export default class Report_vio extends Component {
         </select>
         <p></p>
         <h3 style={{display:"inline-block"}}>Upload supporting documents:</h3>
-        <input type = "file" id = "location" required></input>
+        <input type = "file" id = "location" accept='.jpg, .jpeg, .png' required></input>
 
         <button className='mlotbtn'><b>Report</b></button>
       </div>
