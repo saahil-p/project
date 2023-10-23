@@ -7,14 +7,21 @@ export default class Payments extends Component {
   render() {
     return (
       <div className='box2'>
-        <h2>Payment gateway</h2>
-        <h5 style={{color: "white"}}><u> Payment Options : </u> </h5>
-        <ul>
-            <li><a href='/' style={{color: "purple",display : "inline"}}>UPI</a></li>
-            <li><a href='/' style={{color: "purple", display: "inline"}}>Credit/Debit Card*</a></li>
-            <li><a href='/' style={{color: "purple", display: "inline"}}>NetBanking</a></li>
-        </ul>
-      </div>
+          <h1 style={{textAlign: "center",padding:"10px", fontFamily:"TimesNewRoman"}}><u>Payment   Gateway</u></h1>
+        <div id='payopt'>
+        <h4 style={{textAlign: "center",paddingLeft:"5px", fontFamily:"TimesNewRoman"}}><u>Payment Options</u></h4>
+          <form>
+            <div>
+            <select id = "s2">
+              <option value = "upi">UPI</option>
+              <option value = " cc">Credit Card</option>
+              <option value = "dc">Debit Card</option>
+              <option value = "nb">Net Banking</option>
+            </select>
+        </div> 
+      </form>
+    </div>
+        </div>  
     )
   }
 }
