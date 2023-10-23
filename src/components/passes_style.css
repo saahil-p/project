@@ -5,7 +5,9 @@
     height: fit-content;
     width: fit-content;
     border-radius: 18px;
+    border: solid black;
 }
+
 .box2{
     display: flexbox;
     justify-content: center;
@@ -84,4 +86,13 @@
     height: 28px;
     width: 200px;
     display: inline-block;
+}
+
+/* adding a box around each individual pass */
+.pass{
+    background: rgba(94, 139, 211, 0.733);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid rgba(177, 193, 218, 0.733);
 }
