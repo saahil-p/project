@@ -220,3 +220,43 @@
 #scpwd{
     grid-row: 4;
 }
+
+.lo{
+    padding-top: 30px;
+}
+
+.day{
+    display: block;
+}
+
+.rect{
+    display: inline-block;
+    background-color: white;
+    border-radius: 14px;
+    width: 200px;
+    text-align: center;
+    margin: 50px;
+}
+
+.mlotbtn{
+    width: 200px;
+    margin-top: 220px;
+    margin-left: 356px;
+    background-color: orange;
+    border-radius: 14px;
+}
+
+.disp{
+    text-align: center;
+    display: inline-block;
+}
+
+.disp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.d1{
+    grid-column: 1;
+}
