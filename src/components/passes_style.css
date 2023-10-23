@@ -145,4 +145,78 @@
     margin-left: 120px;
     margin-top: 10px;
     border-radius: 14px;
+.usn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.usn_heading{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 100px;
+}
+.usn_inp{
+    display: inline;
+    grid-row : 2;
+    grid-column: 1;
+    margin-left: 100px;
+    width: 200px;
+    border-radius: 14px;
+}
+
+.lginbtn{
+    background-color: orange;
+    border-radius: 14px;
+    width: 96px;
+    height: 42px;
+    grid-column: 1;
+    margin-left: 404px;
+    margin-top: 80px;
+}
+
+.s{
+    width: auto;
+    margin-left: 340px;
+    margin-top: 30px;
+}
+
+.sup{
+    text-align: center;
+    padding: 50px;
+}
+
+.c_acc{
+    color: white;
+    margin-left: 50px;
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#sin{
+    grid-row: 1;
+}
+
+.sin{
+    margin-left: 100px;
+    border-radius: 14px;
+    margin-top: 14px;
+    width: 200px;
+    text-align: center;
+}
+
+#spem{
+    grid-row: 2;
+}
+
+#spwd{
+    grid-row: 3;
+}
+
+#scpwd{
+    grid-row: 4;
 }
