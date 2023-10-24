@@ -21,7 +21,7 @@ export default class Payments extends Component {
             </select>
         </div> 
       </form>
-      <button> <Link to = '/ps'>Pay Now! </Link></button>
+      <button className='lginbtn'> <Link to = '/ps' className='link'>Pay Now! </Link></button>
     </div>
         </div>  
     )

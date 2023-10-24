@@ -13,7 +13,7 @@ export default class New_pass extends Component {
           <form>
           <div>
             <p id = "l1">Location : </p>
-            <input type = "text" id = "validity"/>
+            <input type = "text" id = "validity" required/>
             </div>
             <div>
             <p id = "v1">Validity :</p>
@@ -31,7 +31,7 @@ export default class New_pass extends Component {
               <option value = "1m">2 Wheeler + 4 Wheeler</option>
             </select>
             </div>
-            <button type = "Pay"><Link to = '/payments'>Pay Now</Link></button>
+            <button type = "Pay" className='lginbtn'><Link to = '/payments' className='link'>Pay Now</Link></button>
           </form>
           </div>
       </div>

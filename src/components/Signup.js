@@ -6,13 +6,15 @@ export default class Signup extends Component {
     return (
       <div className='box2'>
         <h1 className='sup'><b><u>Signup</u></b></h1>
-        <h3 className='c_acc'><u>Create an account</u></h3>
-        <div className='Grid'>
+        <h3 className='c_acc' style={{color:"black", fontFamily:"timesnewroman"}}><u>Create an account</u></h3>
+        <div className='pass'>
+        <div className='Grid' id = "sup">
             <input type='text' id = "sin" className='sin' placeholder='Name'></input>
             <input type ="email" id = 'spem' className='spem sin' placeholder='Email'></input>
             <input type = "password" id = "spwd"className='sin' placeholder='Password'></input>
             <input type = "password" id = "scpwd" className='sin' placeholder='Confirm Password'></input>
-            <button type='submit' className='lginbtn' value={"Submit"}><Link to = '/'><b>Signup</b></Link></button>
+        </div>
+            <button type='submit' className='lginbtn' id = "supbtn" value={"Submit"}><Link to = '/' className='link'><b>Signup</b></Link></button>
         </div>
       </div>
     )

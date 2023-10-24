@@ -25,7 +25,7 @@ export default class Cust_lgin extends Component {
                 <Passes btntxt = "Validate" location = "Office" validity = "Year" type = "4 Wheeler" position = "bottom-right"/>
               </div>
             </div>
-            <button className='lginbtn'><Link to = '/np'>New Pass</Link></button>
+            <button id='npassbtn'><Link to = '/np'>New Pass</Link></button>
         </div>
         </>
     )

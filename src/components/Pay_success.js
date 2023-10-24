@@ -9,8 +9,8 @@ export default class Pay_success extends Component {
     }
   render() {
     return (
-      <div className='box2'>
-        <h2 className='text-center'>Payment Successful! Redirecting to <Link to = '/clgin'>home....</Link></h2>
+      <div className='box2' id="paysuc">
+        <h2 className='text-center'style={{textAlign: "center",padding:"10px", fontFamily:"TimesNewRoman"}}>Payment Successful! Redirecting to <Link to = '/clgin' className='link'>home....</Link></h2>
       </div>
     )
   }

@@ -20,6 +20,7 @@
     border: solid black;
 }
 
+/* qrcode allignment */
 #qr{
     margin: 190px auto;
     display: flex;
@@ -28,24 +29,64 @@
     /* padding: 250px; */
 }
 
-.top-left{
+/* passes.js css */
+.top-left,.bottom-left{
     margin-left: 40px;
-    margin-right: 60px;
+    margin-top: 20px;
+    /* margin-right: 20px; */
 }
-.top-right{
-    margin-left: 60px;
+
+.top-right,.bottom-right{
+    /* margin-left: 40px; */
     margin-right: 40px;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
 }
-.bottom-right{
-    margin-top: 100px;
-    margin-left: 60px;
-    margin-right: 40px;
+
+/* adding a box around each individual pass */
+.pass{
+    background: rgba(94, 139, 211, 0.733);
+    padding: 5px;
+    border-radius: 20px;
+    border: solid rgba(177, 193, 218, 0.733);
 }
-.bottom-left{
-    margin-left: 40px;
-    margin-top: 100px;
-    margin-right: 60px;
+
+#npassbtn{
+    margin-left: 404px;
+    background-color: orange;
+    border-radius: 14px;
+    width: 96px;
+    height: 42px;
+    grid-column: 1;
 }
+
+/* landing css */
+.lgbt{
+    background-color: orange;
+    margin-top: 50px;
+    width: 200px;
+    border: solid black;
+    border-radius: 14px;
+}
+
+#lgbt1{
+    margin-left: 175px;
+}
+
+#lgbt2{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+/* manage lot css */
+.manage{
+    background: rgba(94, 139, 211, 0.733);
+    padding: 5px;
+    border-radius: 20px;
+    border: solid rgba(177, 193, 218, 0.733); 
+    justify-content: center;
+}
+
 
 #location{
     display: inline-block;
@@ -97,14 +138,6 @@
     display: inline-block;
 }
 
-/* adding a box around each individual pass */
-.pass{
-    background: rgba(94, 139, 211, 0.733);
-    padding: 20px;
-    border-radius: 20px;
-    border: solid rgba(177, 193, 218, 0.733);
-}
-
 #tl{
     margin-left: 10px;
     margin-top: 30px;
@@ -148,8 +181,9 @@
 }
 .usn{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 50px 
 }
 
 .usn_heading{
@@ -161,7 +195,7 @@
     display: inline;
     grid-row : 2;
     grid-column: 1;
-    margin-left: 100px;
+    margin-left: 200px;
     width: 200px;
     border-radius: 14px;
 }
@@ -172,13 +206,12 @@
     width: 96px;
     height: 42px;
     grid-column: 1;
-    margin-left: 404px;
-    margin-top: 80px;
+    margin-left: 130px;  
+    margin-top: 20px; 
 }
 
 .s{
     width: auto;
-    margin-left: 340px;
     margin-top: 30px;
 }
 
@@ -260,4 +293,30 @@
 
 .d1{
     grid-column: 1;
+}
+
+#landing{
+    background: rgba(94, 139, 211, 0.733);
+    padding: 20px;
+    border-radius: 20px;
+    border: solid rgba(177, 193, 218, 0.733);
+    margin: 100px 100px;
+}
+
+/* change all links to blue*/
+.link{
+    color: darkblue;
+}
+
+#sup{
+    padding-left: 250px;
+    padding-bottom: 30px;
+}
+
+#supbtn{
+    margin-right: 200px;
+}
+
+#paysuc{
+    padding: 220px;
 }
