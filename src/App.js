@@ -42,6 +42,8 @@ export default class App extends Component {
           <Route exact path = "/img" element = {<Img/>} />
           <Route exact path="/err" element = {<Err/>} />
           <Route exact path = "/about" element = {<About/>} />
+
+          
         </Routes>
     </>
     )
