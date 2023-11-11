@@ -19,12 +19,14 @@ import React, { Component } from 'react'
 import Pay_success from "./components/Pay_success";
 import Err from "./components/Err";
 import About from "./components/About";
+import PassState from "./context/passState";
 
 export default class App extends Component {
   render() {
     return (
       <>
       <NavBar />
+      <PassState>
       <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/signup" element={<Signup />} />
@@ -45,6 +47,7 @@ export default class App extends Component {
 
           
         </Routes>
+        </PassState>
     </>
     )
   }

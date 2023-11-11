@@ -3,15 +3,12 @@ import "./passes_style.css";
 import Qr_page from './Qr_page';
 import { Link } from 'react-router-dom';
 
-export default class Passes extends Component {
-  onClickHandler = () => {
-    <Qr_page /> //Figure out why this isnt working.
-  }
 
-  render() {
-    return (
+const Passes = () => {
+  return (
+    <div>
       <>
-      <div className = {this.props.position} >
+      <div>
         <span>
           <div className='pass'>
             <div>
@@ -33,6 +30,10 @@ export default class Passes extends Component {
         </span>
       </div>
       </>
-    )
-  }
+      
+    </div>
+  )
 }
+
+export default Passes
+
