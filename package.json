@@ -13,6 +13,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
+    "schedule": "^0.5.0",
+    "timers": "^0.1.1",
     "validater": "^1.0.5",
     "validator": "^13.11.0",
     "web-vitals": "^2.1.4"

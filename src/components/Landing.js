@@ -57,8 +57,7 @@ const Landing = () => {
           <input type = 'password' className='usn_inp' name = "password" id = "password" onChange={onChange} required></input>
         </div>
         <div className='lgin'>
-          <button type='submit' className = "lgbt" id = "lgbt1" value={"Submit"}><b>Login</b></button>
-          {/* <button type='submit' value={"Submit"} className = "lgbt" id = "lgbt2"><Link to = "/adminlgin"><b>Admin Login</b></Link></button> */}
+          <button type='submit' className = "lgbt" id = "lgbt1" value={"Submit"} style={{marginLeft:"0px"}}><b>Login</b></button>
           <p className='s'>Don't have an account? <Link to='/signup' className='link'>Sign Up</Link></p>
         </div>
       </div>
